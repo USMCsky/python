@@ -14,9 +14,9 @@ team1_chance += random.randint(0,16)
 team2_chance += random.randint(0,16)
 
 print("we are gathering details...")
-time.sleep(1)
+time.sleep(2)
 print("...we are almost there...\n")
-time.sleep(1)
+time.sleep(2)
 
 if team1_chance >= team2_chance and team1_chance != team2_chance:
     confidence = (team1_chance - team2_chance) / 31 * 100
