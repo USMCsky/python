@@ -102,6 +102,26 @@ def print_square(size):
         print()
 main()
 
+# FOR LOOP
+# letters.py
 
+def main():
+    names = ["Mario", "Luigi", "Daisy", "Yoshi"]
+    for i in range(len(names)):     # for name in names:
+        print(write_letter(names[i], "Princess Peach"))    #name
 
+def write_letter(receiver, sender):
+    return f"""
++```````````````````````````````````````````````````+
+        Dear {receiver},
+        
+        You are cordially invite to a ball at
+        Peach's Castle this evening, 7:00 PM.
+        
+        Sincerely,
+        {sender}
+
++```````````````````````````````````````````````````+
+"""
+main()
 
