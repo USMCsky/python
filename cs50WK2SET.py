@@ -56,3 +56,39 @@ for vowel in twttr_post:
         continue
     print(vowel, end="")
 
+
+# Structure is_valid returns True if s meets all requirements and False if it does not.
+#implement additional functions for is_valid to call (e.g., one function per requirement).
+# Much like a list, a str is a “sequence” (of characters), which means it can be “sliced” into shorter
+# strings with syntax like s[i:j]. For instance, if s is "CS50", then s[0:2] would be "CS".
+# plates.py
+def main():
+    plate = input("Plate: ")
+    if is_valid(plate):
+        print("Valid")
+    else:
+        print("Invalid")
+
+
+def is_valid(s):
+    if len(s) <= 2 or len(s) > 6:  # Must be longer than two or no greater than 6
+        return False
+
+    for punct in s:             # “No periods, spaces, or punctuation marks are allowed.”
+        if punct in [".", " ", "!", "?", ","]:
+            return False
+
+# “Numbers cannot be used in the middle of a plate; they must come at the end.
+# For example, AAA222 would be an acceptable … vanity plate; AAA22A would not be acceptable.
+# The first number used cannot be a ‘0’.”
+    for i in range(len(s)):
+        if s[i].isdigit():
+            if i == len(s) - 2 and s[i] == '0':
+                return False
+            elif not(i == len(s) - 1 or i == len(s) - 2):
+                return False
+    return True
+
+main()
+
+
