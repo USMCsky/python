@@ -6,7 +6,6 @@ distances = {
     "Pioneer 11": "44 AU",
 }
 
-
 def main():
     spacecraft = input("Enter a spacecraft: ")
     
@@ -22,9 +21,7 @@ def main():
     m = convert(au)
     print(f"{m} m")
 
-
 def convert(au):
     return au * 149597870700
-
 
 main()
