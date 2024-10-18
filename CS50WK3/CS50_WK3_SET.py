@@ -20,21 +20,65 @@ while True :
         pass
     else:
         break
-################################
-# grocery.py
-groceries = {}
+# ################################
+# # taqueria.py
+
+menu = {
+    "Baja Taco": 4.25,
+    "Burrito": 7.50,
+    "Bowl": 8.50,
+    "Nachos": 11.00,
+    "Quesadilla": 8.50,
+    "Super Burrito": 8.50,
+    "Super Quesadilla": 9.50,
+    "Taco": 3.00,
+    "Tortilla Salad": 8.00
+}
+cost = 0
 while True:
     try:
-        item = input().upper()
-        if item in groceries.keys():
-            groceries[item] += 1
-        else:
-            groceries[item] = 1
-            pass
+        if input() == 'q':
+            break
+        item = input("Item: ").title()
+        cost = cost + menu[item]
+        print(f"Total: ${cost:.2f}")
     except EOFError:
-        sort = dict(sorted(groceries.items()))
+        print()
         break
+    except KeyError:
+        pass
 
-for item in sort:
-    print(groceries[item], item)
-  
+#########################################
+# outdated.py
+
+def main():
+    month,day, year = get_date()
+    day = int(day)
+    month = int(month)
+    print(f"{year}-{month:02}-{day:02}")
+
+def get_date():
+    months = [  "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ]
+
+    while True:
+        date = input("date: ").strip()
+        if "/" in date:
+            month, day, year = date.split("/")
+        elif "," in date:
+            month, day, year = date.split()
+            if month in months:
+                month = months.index(month)+1
+                day = day.strip(",")
+        else:
+            continue
+        try:
+            if int(day) > 31 or int(month) > 12:
+                continue
+            else:
+                break
+        except ValueError:
+            continue
+    return month, day, year
+
+main()
+
