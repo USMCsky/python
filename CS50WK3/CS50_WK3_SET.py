@@ -37,8 +37,6 @@ menu = {
 cost = 0
 while True:
     try:
-        if input() == 'q':
-            break
         item = input("Item: ").title()
         cost = cost + menu[item]
         print(f"Total: ${cost:.2f}")
