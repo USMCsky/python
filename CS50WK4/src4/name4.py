@@ -1,5 +1,3 @@
-# Demonstrates list slice
-
 import sys
 
 if len(sys.argv) < 2:

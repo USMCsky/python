@@ -1,5 +1,3 @@
-# Demonstrates iterating over JSON
-
 import json
 import sys
 import requests

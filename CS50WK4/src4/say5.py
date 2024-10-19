@@ -1,5 +1,4 @@
 # Demonstrates own module
-
 import sys
 
 from sayings2 import goodbye
