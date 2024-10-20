@@ -67,3 +67,42 @@ while i < 5:
         j += 1
     i += 1
     print("")
+
+
+mystery_string = "Lucy"
+
+
+#For example, if the string was "Lucy", then the output would
+#be:
+#
+#L
+#Lu
+#Luc
+#Lucy
+#
+#Hint: to print without automatically starting a new line,
+#include the text end="" inside the print statement's
+#parentheses. For example, print("Hello", end="") will print
+#the word "Hello" without starting a new line afterward. So,
+#calling it twice would print "HelloHello" on one line
+#instead of two lines.
+mystery_string = "Lucy"
+for i in range(len(mystery_string)):
+    print(mystery_string[:i + 1])
+
+########### alternative solution #####
+mystery_string = "Lucy"
+current_row = ""
+for letter in mystery_string:
+    current_row += letter
+    print(current_row)
+
+#####################################
+mystery_string = "Lucy"
+
+#This method uses information you'll learn in Chapter 4.2.
+#Here's a preview in the meantime, though:
+
+for i in range(1, len(mystery_string) + 1):
+    print(mystery_string[0:i])
+
