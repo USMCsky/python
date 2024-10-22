@@ -1,5 +1,3 @@
-# Demonstrates pip-installed package
-
 import cowsay
 import sys
 
