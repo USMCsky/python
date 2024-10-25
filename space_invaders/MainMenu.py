@@ -2,7 +2,7 @@ import pygame
 
 class MainMenu:
     def __init__(self, screen):
-        self.font = pygame.font.Font('fonts/Alien.ttf', 80)
+        self.font = pygame.font.Font('Fonts/Alien.ttf', 80)
         self.title = self.font.render("Alien Invasion!", True, (255, 255, 255))
         self.title_position = (10, 10)
         self.gameplay_scene = None

@@ -89,6 +89,36 @@ print(semihemisphere(67.1, 12.1))
 print(semihemisphere(-11.6, -62.3))
 
 #HideAndSeek2.py Coding 3.4.4 13 of 25
+#Write your function here!
+def hide_and_seek(count):
+    for number in range(1, count + 1):
+        print(number)
+    print("Ready or not, here I come!")
+
+#The function call below will test your function. We'll delete
+#and overwrite this with other calls to hide_and_seek with
+#different numbers during grading:
+hide_and_seek(36)
+
+#########################################
+#LeapYear.py
+def is_leap_year(year):
+    # Check if the year is a leap year
+    if year % 400 == 0:
+        return True
+    elif year % 100 == 0:
+        return False
+    elif year % 4 == 0:
+        return True
+    else:
+        return False
+
+# Test cases to verify the code
+print("1993 is a leap year:", is_leap_year(1993))  # Expected output: False
+print("1996 is a leap year:", is_leap_year(1996))  # Expected output: True
+print("1900 is a leap year:", is_leap_year(1900))  # Expected output: False
+print("2000 is a leap year:", is_leap_year(2000))  # Expected output: True
+
 
 
 
