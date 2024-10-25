@@ -28,4 +28,70 @@ print(0)
 #4 5 6$
 #7!8!9!0
 
+#HideAndSeek 3.4.1 10 of 25
+#Write a function called hide_and_seek. The function should
+#have no parameters and return no value; instead, when
+#called, it should just print the numbers from 1 through 10,
+#follow by the text "Ready or not, here I come!". Each
+#number and the message at the end should be on its own
+#line.
+#Then, call the function.
+#There should be no print statements outside the function.
+#Write your function here!
+def hide_and_seek():
+    for i in range(1,11):
+        print(i)
+    print("Ready or not, here I come!")
+
+hide_and_seek()
+
+#ShowSelector 3.4.2 11 of 25
+#Write a function called select_a_show. select_a_show
+#should have one parameter, an integer representing
+#how many minutes until you have to leave.
+#select_a_show should return the following:
+def select_a_show(n):
+    if n <= 0:
+        return "You're late!"
+    elif n <= 10:
+        return "Leave now, be early!"
+    elif n <= 45:
+        return "Watch a comedy!"
+    elif n <= 100:
+        return "Watch a drama!"
+    else:
+        return "Watch a movie!"
+            
+print(select_a_show(-5))
+print(select_a_show(5))
+print(select_a_show(34))
+print(select_a_show(68))
+print(select_a_show(124))
+
+#semihemisphere.py Coding 3.4.3 12 of 25
+def semihemisphere(x, y):
+#latitude is between -90 and 90 South and Nouth poles - 0 equator
+#longitude is between -180 and 180 -180 West and 180 East - 0 to 180 Eastern
+    if x < 0 and y < 0: #SW
+        return "Southwest"
+    if x > 0 and y < 0: #NW
+        return "Northwest"
+    if x < 0 and y > 0: #SE
+        return "Southeast"
+    if x > 0 and y > 0: #NE
+        return "Northeast"
+
+#If your function works correctly, this will originally
+#print Northwest, Southeast, Northeast, Southwest
+print(semihemisphere(33.7, -84.4))
+print(semihemisphere(-71.1, 86.3))
+print(semihemisphere(67.1, 12.1))
+print(semihemisphere(-11.6, -62.3))
+
+#HideAndSeek2.py Coding 3.4.4 13 of 25
+
+
+
+
+
 
