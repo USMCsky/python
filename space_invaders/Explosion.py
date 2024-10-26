@@ -5,7 +5,7 @@ class Explosion:
     def __init__(self, x, y):
         self.x = x
         self.y = y
-        self.image = pygame.image.load('images/explode.png')
+        self.image = pygame.image.load('Images/red.png')  #change out for explosion
         self.framex = 3
         self.framey = 3
         self.sprite_size = 32

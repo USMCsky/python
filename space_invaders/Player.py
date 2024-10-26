@@ -7,7 +7,7 @@ from Bullet import Bullet
 class Player(pygame.sprite.Sprite):
     def __init__(self, ypos):
         pygame.sprite.Sprite.__init__(self)
-        self.image = pygame.image.load('images/ship.png')
+        self.image = pygame.image.load('Images/player.png')
         self.x = 10
         self.y = ypos
         self.bullets = []

@@ -2,7 +2,7 @@ import pygame
 
 class ThirdMenu:
     def __init__(self):
-        self.font = pygame.font.Font('fonts/Alien.ttf', 80)
+        self.font = pygame.font.Font('Fonts/Alien.ttf', 80)
         self.title = self.font.render("This is Third!", True, (255, 255, 255))
         self.title_position = (10, 10)
         self.main_menu = None

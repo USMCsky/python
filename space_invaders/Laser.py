@@ -4,7 +4,7 @@ import pygame
 class Laser(pygame.sprite.Sprite):
     def __init__(self, x, y, yspeed):
         pygame.sprite.Sprite.__init__(self)
-        self.image = pygame.image.load('images/abullet.png')
+        self.image = pygame.image.load('images/white_laser.png')
         self.x = x - self.image.get_width() // 2
         self.y = y
         self.dy = yspeed

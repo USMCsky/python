@@ -8,7 +8,7 @@ from Explosion import Explosion
 
 class GamePlay:
     def __init__(self, screen):
-        self.font = pygame.font.Font('fonts/Alien.ttf', 20)
+        self.font = pygame.font.Font('Fonts/Alien.ttf', 20)
         self.title = self.font.render("This is where the game is", True, (255, 255, 255))
         self.title_position = (10, 10)
         self.main_menu = None
@@ -37,14 +37,12 @@ class GamePlay:
         self.dy = 10
         self.direction = self.dx
         self.explosions = []
-        self.font2 = pygame.font.Font('fonts/Alien.ttf', 80)
+        self.font2 = pygame.font.Font('Fonts/Alien.ttf', 80)
         self.title = self.font2.render("Game Over", True, (255, 255, 255))
-        self.title_position = ((screen.get_width() - self.title.get_width())//2, \
-                              (screen.get_height() - self.title.get_height()) //2)
+        self.title_position = ((screen.get_width() - self.title.get_width())//2, (screen.get_height() - self.title.get_height()) //2)
 
         self.title_lost = self.font2.render("You Lost", True, (255, 255, 255))
-        self.title_position_lost = ((screen.get_width() - self.title_lost.get_width())//2, \
-                              (screen.get_height() - self.title_lost.get_height()) //2)
+        self.title_position_lost = ((screen.get_width() - self.title_lost.get_width())//2, (screen.get_height() - self.title_lost.get_height()) //2)
         self.screen = screen
 
 

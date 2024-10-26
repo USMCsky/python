@@ -13,7 +13,7 @@ class Alien(pygame.sprite.Sprite):
         self.y = y
         self.atype = atype
         self.frame = 0
-        self.image = pygame.image.load('images/aliens_sm.png')
+        self.image = pygame.image.load('Images/yellow.png')
         self.sprite_size = 32
         self.rect = self.image.get_rect()
         self.rect.topleft = (self.x * self.sprite_size + Settings.xoffset,

@@ -1,17 +1,9 @@
-# Doesn't check __name__
-
-
-def main():
-    hello("world")
-    goodbye("world")
-
-
 def hello(name):
+    name = input("Enter your name: ")
     print(f"hello, {name}")
 
-
 def goodbye(name):
+    name = input("Enter your name: ")
     print(f"goodbye, {name}")
 
 
-main()

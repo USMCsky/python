@@ -4,7 +4,7 @@ import pygame
 class Bullet(pygame.sprite.Sprite):
     def __init__(self, x, y, yspeed):
         pygame.sprite.Sprite.__init__(self)
-        self.image = pygame.image.load('images/bullet.png')
+        self.image = pygame.image.load('Images/yellow_laser.png')
         self.x = x - self.image.get_width() // 2
         self.y = y
         self.dy = yspeed

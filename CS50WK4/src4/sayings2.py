@@ -1,17 +1,9 @@
 # Check __name__
+from sayings1 import hello, goodbye
 
 def main():
-    hello("world")
-    goodbye("world")
-
-
-def hello(name):
-    print(f"hello, {name}")
-
-
-def goodbye(name):
-    print(f"goodbye, {name}")
-
+    hello("")
+    goodbye("")
 
 if __name__ == "__main__":
     main()
