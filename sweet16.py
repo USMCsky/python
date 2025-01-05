@@ -21,11 +21,11 @@ time.sleep(2)
 if team1_chance >= team2_chance and team1_chance != team2_chance:
     confidence = (team1_chance - team2_chance) / 31 * 100
     confidence = int(confidence)
-    print(team1_name + " WINS!🏆" + " with a " + str(confidence) +"% of confidence!!!🏆")
+    print(team1_name + " WINS!🏆" + " with a " + str(confidence) + "% of confidence!!!🏆")
 else:
-    confidence = (team2_chance - team1_chance) / 31*100
+    confidence = (team2_chance - team1_chance) / 31 * 100
     confidence = int(confidence)
-    print(team2_name + " WINS!🏆" + " with a " + str(confidence) +"% of confidence!!!🏆")
+    print(team2_name + " WINS!🏆" + " with a " + str(confidence) + "% of confidence!!!🏆")
 
 if team1_chance == team2_chance:
     print("😒IT IS A TIE!!!😒")
